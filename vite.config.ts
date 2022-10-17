@@ -18,7 +18,7 @@ export default defineConfig({
   // 添加库模式配置
   build: {
     rollupOptions: {
-      external: ["vue", "vue-router"],
+      external: ["vue"],
       output: {
         globals: {
           vue: "Vue",
@@ -27,7 +27,9 @@ export default defineConfig({
       },
     },
     cssCodeSplit: true,
-    minify: false,
+    minify: 'terser',
+    sourcemap: true,
+    reportCompressedSize: true,
     lib: {
       entry: resolve(__dirname, "src/entry.ts"),
       name: "WantUI",
