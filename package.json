@@ -1,0 +1,61 @@
+{
+  "name": "want-ui-vite",
+  "version": "1.0.0",
+  "description": "want-ui-vite",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "test": "vitest",
+    "lint": "eslint --fix --ext .ts,.vue src",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/you-want/want-ui-vite.git"
+  },
+  "keywords": [
+    "vite",
+    "ui",
+    "vue3",
+    "want"
+  ],
+  "author": "Rain9",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/you-want/want-ui-vite/issues"
+  },
+  "homepage": "https://github.com/you-want/want-ui-vite#readme",
+  "devDependencies": {
+    "@iconify-json/ic": "^1.1.9",
+    "@types/node": "^18.8.3",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "@unocss/preset-icons": "^0.45.28",
+    "@vitejs/plugin-vue": "^3.1.2",
+    "@vitejs/plugin-vue-jsx": "^2.0.1",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/test-utils": "^2.1.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.25.0",
+    "eslint-formatter-pretty": "^4.1.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.6.0",
+    "happy-dom": "^7.4.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "unocss": "^0.45.28",
+    "vite": "^3.1.6",
+    "vitepress": "1.0.0-alpha.8",
+    "vitepress-theme-demoblock": "^1.4.2",
+    "vitest": "^0.24.3"
+  },
+  "dependencies": {
+    "typescript": "^4.8.4",
+    "vue": "^3.2.40"
+  }
+}
