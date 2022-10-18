@@ -1,0 +1,39 @@
+name: Publish want-ui-vite To Npm
+
+# on 用来控制何时运行这个 workflow
+on:
+  # 在 push 和 pull_request 时候触发
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  # 允许手动 在 github 网页上执行 workflow
+  workflow_dispatch:
+    
+
+# 一个 workflow 可以由多个 job 组成，可以并行或者分离运行 
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    name: "publish npm"
+
+    environment: npm
+
+    steps:
+      - uses: actions/checkout@master
+      - uses: pnpm/action-setup@v2.1.0
+        with:
+          version: 6.31.0
+      - name: Install modules
+        run: pnpm install
+      - name: Build
+        run:  pnpm run build
+      - name: "Publish to the npm registry"
+        uses: primer/publish@3.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }} # 跟前面步骤中的 NPM_AUTH_TOKEN 保持一致
+        with:
+          default_branch: "main"
+          dir: "dist"
