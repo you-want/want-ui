@@ -1,6 +1,6 @@
 {
-  "name": "want-ui-vite",
-  "version": "1.0.0",
+  "name": "@you-want/want-ui-vite",
+  "version": "0.0.1",
   "description": "want-ui-vite",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,10 @@
     "type": "git",
     "url": "git+https://github.com/you-want/want-ui-vite.git"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "keywords": [
     "vite",
     "ui",
@@ -25,7 +29,7 @@
     "want"
   ],
   "author": "Rain9",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/you-want/want-ui-vite/issues"
   },
