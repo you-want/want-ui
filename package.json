@@ -1,6 +1,6 @@
 {
   "name": "@you-want/want-ui-vite",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "want-ui-vite",
   "main": "index.js",
   "scripts": {
