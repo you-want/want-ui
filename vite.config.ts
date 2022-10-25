@@ -1,13 +1,12 @@
 /// <reference types="vitest" />
-import { defineConfig } from "vite";
+import { defineConfig, UserConfigExport } from "vite";
 import { resolve } from "path";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import Unocss from "./config/unocss";
 
 // https://vitejs.dev/config/
-
-export default defineConfig({
+export const config = {
   plugins: [
     vue(),
     vueJsx({
@@ -26,7 +25,7 @@ export default defineConfig({
         exports: "named",
       },
     },
-    cssCodeSplit: true,
+    cssCodeSplit: false,
     minify: "terser",
     sourcemap: true,
     reportCompressedSize: true,
@@ -37,6 +36,7 @@ export default defineConfig({
       // 导出模块格式
       formats: ["es", "cjs", "umd", "iife"],
     },
+    outDir: "./dist",
   },
   test: {
     // enable jest-like global test APIs
@@ -49,4 +49,6 @@ export default defineConfig({
       web: [/.[tj]sx$/],
     },
   },
-});
+};
+
+export default defineConfig(config as UserConfigExport);
