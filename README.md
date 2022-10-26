@@ -1,20 +1,20 @@
 <p align="center">
-<img src="https://github.com/you-want/want-ui-vite/blob/main/docs/logo.png"/>
+<img src="https://github.com/you-want/want-ui/blob/main/docs/logo.png"/>
 </p>
 
-<h1 align="center">want-ui-vite</h1>
+<h1 align="center">want-ui</h1>
 
 <p align="center">
 你想要的一个 UI 组件库
 </p>
 
-<p align="center"><a href="https://www.npmjs.com/package/@you-want/want-ui-vite"><img src="https://img.shields.io/npm/v/@you-want/want-ui-vite?color=c95f8b&amp;label=" alt="NPM version"></a></p>
+<p align="center"><a href="https://www.npmjs.com/package/@you-want/want-ui"><img src="https://img.shields.io/npm/v/@you-want/want-ui?color=c95f8b&amp;label=" alt="NPM version"></a></p>
 
-[![CI](https://github.com/you-want/want-ui-vite/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/you-want/want-ui-vite/actions/workflows/main.yml)
-![MIT](https://img.shields.io/github/license/you-want/want-ui-vite?color=red)
-[![codecov](https://codecov.io/gh/you-want/want-ui-vite/branch/main/graph/badge.svg?token=7QHP5W7BHZ)](https://codecov.io/gh/you-want/want-ui-vite)
+[![CI](https://github.com/you-want/want-ui/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/you-want/want-ui/actions/workflows/main.yml)
+![MIT](https://img.shields.io/github/license/you-want/want-ui?color=red)
+[![codecov](https://codecov.io/gh/you-want/want-ui/branch/main/graph/badge.svg?token=7QHP5W7BHZ)](https://codecov.io/gh/you-want/want-ui)
 
-[文档](https://want-ui-vite.vercel.app/)
+[文档](https://want-ui.vercel.app/)
 
 ## Features
 
