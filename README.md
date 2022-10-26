@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/you-want/want-ui/blob/main/docs/logo.pngssss"/>
+<img src="https://github.com/you-want/want-ui/blob/main/docs/logo.png"/>
 </p>
 
 <h1 align="center">want-ui</h1>
