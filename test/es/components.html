@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <link rel="stylesheet" href="../../dist/Button/assets/index.ccf02a29.css">
+  <script src="../../node_modules/vue/dist/vue.global.js"></script>
+  <script src="../../dist/Button/index.iife.js"></script>
+  <script>
+    const { createApp } = Vue
+    console.log('vue', Vue)
+    console.log('WantUI', Button)
+
+    createApp({
+      template: `
+        <div style="margin-bottom:20px;">
+            <WButton color="blue">主要按钮</WButton>
+            <WButton color="green">绿色按钮</WButton>
+            <WButton color="gray">灰色按钮</WButton>
+            <WButton color="yellow">黄色按钮</WButton>
+            <WButton color="red">红色按钮</WButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <WButton color="blue" plain>朴素按钮</WButton>
+            <WButton color="green" plain>绿色按钮</WButton>
+            <WButton color="gray" plain>灰色按钮</WButton>
+            <WButton color="yellow" plain>黄色按钮</WButton>
+            <WButton color="red" plain>红色按钮</WButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <WButton size="small" plain>小按钮</WButton>
+            <WButton size="medium" plain>中按钮</WButton>
+            <WButton size="large" plain>大按钮</WButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <WButton color="blue" round plain icon="search">搜索按钮</WButton>
+            <WButton color="green" round plain icon="edit">编辑按钮</WButton>
+            <WButton color="gray" round plain icon="check">成功按钮</WButton>
+            <WButton color="yellow" round plain icon="message">提示按钮</WButton>
+            <WButton color="red" round plain icon="delete">删除按钮</WButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <WButton color="blue" round plain icon="search"></WButton>
+            <WButton color="green" round plain icon="edit"></WButton>
+            <WButton color="gray" round plain icon="check"></WButton>
+            <WButton color="yellow" round plain icon="message"></WButton>
+            <WButton color="red" round plain icon="delete"></WButton>
+        </div>
+    `
+    })
+      .use(Button.default)
+      .mount('#app')
+
+  </script>
+</body>
+
+</html>

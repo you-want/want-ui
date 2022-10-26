@@ -9,6 +9,16 @@ const buildAll = async () => {
   await build(defineConfig(config as UserConfig) as InlineConfig);
 
   // 按需打包
+  // 复制 Package.json 文件
+  const packageJson = require("../package.json");
+  packageJson.main = "want-ui.umd.js";
+  packageJson.module = "want-ui.mjs";
+
+  fs.outputFile(
+    path.resolve(config.build.outDir, `package.json`),
+    JSON.stringify(packageJson, null, 2)
+  );
+
   const srcDir = path.resolve(__dirname, "../src/");
   fs.readdirSync(srcDir)
     .filter((name) => {
@@ -36,10 +46,10 @@ const buildAll = async () => {
       fs.outputFile(
         path.resolve(outDir, `package.json`),
         `{
-        "name": "@you-want/want-ui-vite/${name}",
-        "main": "index.umd.js",
-        "module": "index.umd.js",
-      }`,
+          "name": "@you-want/want-ui-vite/${name}",
+          "main": "index.umd.js",
+          "module": "index.umd.js"
+        }`,
         `utf-8`
       );
     });

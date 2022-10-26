@@ -25,7 +25,7 @@ export const config = {
         exports: "named",
       },
     },
-    cssCodeSplit: false,
+    cssCodeSplit: true,
     minify: "terser",
     sourcemap: true,
     reportCompressedSize: true,

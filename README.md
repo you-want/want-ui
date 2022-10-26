@@ -13,3 +13,7 @@
 <https://github.com/xinlei3166/vitepress-theme-demoblock/issues/28>
 
 **目前的解决办法**：降低了 vitepress 版本（"vitepress": "^1.0.0-alpha.19", ——> "vitepress": "1.0.0-alpha.8",）
+
+2、plugin:unocss:global:build:generate
+
+pnpm build:components 打包之后会爆一些警告？ 暂时不知道怎么处理

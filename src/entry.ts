@@ -1,15 +1,17 @@
 import { App } from "vue";
-import WButton from "./Button";
+import { Button } from "./Button/index";
 import SFCButton from "./Button/SFCButton.vue";
 import JSXButton from "./Button/JSXButton";
+import "uno.css";
 
 // 导出单独组件
-export { WButton, SFCButton, JSXButton };
+export { Button, SFCButton, JSXButton };
 
 // 编写一个插件，实现一个install方法
 export default {
   install(app: App): void {
-    app.component(WButton.name, WButton);
+    console.log("WButton", Button);
+    app.component(Button.name, Button);
     app.component(SFCButton.name, SFCButton);
     app.component(JSXButton.name, JSXButton);
   },
