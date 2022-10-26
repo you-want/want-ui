@@ -1,6 +1,7 @@
 {
   "cSpell.words": [
     "Attributify",
+    "Codecov",
     "commitlint",
     "demoblock",
     "esno",
@@ -9,6 +10,7 @@
     "pnpm",
     "semibold",
     "unocss",
+    "Vercel",
     "vitepress",
     "vitest"
   ]
