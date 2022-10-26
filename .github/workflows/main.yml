@@ -1,4 +1,4 @@
-name: Publish want-ui-vite To Npm
+name: Publish want-ui To Npm
 
 # on 用来控制何时运行这个 workflow
 on:

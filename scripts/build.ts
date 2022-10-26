@@ -46,7 +46,7 @@ const buildAll = async () => {
       fs.outputFile(
         path.resolve(outDir, `package.json`),
         `{
-          "name": "@you-want/want-ui-vite/${name}",
+          "name": "@you-want/want-ui/${name}",
           "main": "index.umd.js",
           "module": "index.umd.js"
         }`,
